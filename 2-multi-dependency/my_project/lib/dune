@@ -1,0 +1,3 @@
+(library
+ (name my_project)
+ (libraries yojson lwt cohttp))

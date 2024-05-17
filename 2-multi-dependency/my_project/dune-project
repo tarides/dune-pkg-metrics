@@ -1,0 +1,9 @@
+(lang dune 3.15)
+
+(name my_project)
+
+(generate_opam_files true)
+
+(package
+ (name my_project)
+ (depends ocaml dune yojson lwt cohttp))
