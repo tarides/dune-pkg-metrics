@@ -58,4 +58,4 @@ This document outlines the scenarios and metrics used to compare the new Dune pa
      in an already setup environment.
    - **Metric:**:
      - Dune (./2.install-dune-and-build-bonsai.sh): ~314 seconds (lock: 14s, build: 300s)
-     - Opam (./4.reuse-opam-and-build-bonsai.sh): <measuring>
+     - Opam (./4.reuse-opam-and-build-bonsai.sh): ~263 seconds
