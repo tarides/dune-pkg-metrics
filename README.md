@@ -24,6 +24,17 @@ This document outlines the scenarios and metrics used to compare the new Dune pa
 
 > **Note for replication:** Please note that these must be ran in order.
 
+| Use-case | Dune | Opam | Description |
+|----------|------|------|-------------|
+| Setup time | ~1s     | ~220s     | The time it takes to setup a new machine and be ready to execute a meaningful command with Dune (dune init, dune build, etc) |
+| Setup + Build new project | ~140s     | ~400s     | The time it takes to prepare the environment for the first meaningful command, create an empty project, and execute `dune build` for the first time in that environment|
+| Build another new project | ~12s     | ~120s     | The time it takes to create a new project, and execute `dune build` in an already setup environment |
+| Setup + Build Bonsai | ~460s | ~491s | The time it takes to prepare a fresh environment and build Bonsai v0.16.0 from scratch |
+| Build Bonsai in a warm environment | ~314s | ~263s | The time it takes build Bonsai v0.16.0 from scratch in an already set up environment |
+| Build Bonsai in a warm environment with DUNE_CACHE | ~314s | ~263s | The time it takes build Bonsai v0.16.0 from scratch in an already set up environment |
+|          |      |      |
+
+
 1. **First Meaningful Command** / **Setup time**
    - **Description:** The time it takes to setup a new machine and be ready to
      execute a meaningful command with Dune (dune init, dune build, etc)
