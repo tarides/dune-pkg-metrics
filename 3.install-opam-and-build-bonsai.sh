@@ -2,11 +2,18 @@
 
 # Clean up
 rm -rf bonsai
+rm -rf ~/.opam _opam dune.lock
+brew uninstall opam
 git clone https://github.com/janestreet/bonsai --sparse -b v0.16.0
 
 start_time=$(date +%s)
-./0.install-opam.sh
+brew install opam
+opam init -y
+opam install dune -y
 eval $(opam env --switch=default)
+end_time=$(date +%s)
+delta=$((end_time - start_time))
+echo "Opam Install Time (Cold): $delta seconds"
 
 pushd bonsai
   start_build_time=$(date +%s)

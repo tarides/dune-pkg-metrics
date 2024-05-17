@@ -6,7 +6,7 @@ brew uninstall opam
 
 start_time=$(date +%s)
 brew install opam
-opam init
+opam init -y
 opam install dune -y
 eval $(opam env --switch=default)
 end_time=$(date +%s)
