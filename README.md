@@ -5,8 +5,8 @@ This document outlines the scenarios and metrics used to compare the new Dune pa
 ## Comparison Scenarios
 
 1. **Time-to-First-Build**
-   - **Description:** This test measures the time taken for a new user to install the necessary tools, create a new project, and complete the first build.
-   - **Metric:** Time taken from installing Dune or opam to having the first build completed.
+  - **Description:** This test measures the time taken for a new user to install the necessary tools, create a new project, and complete the first build.
+  - **Metric:** Time taken from installing Dune or opam to having the first build completed.
     - Dune: 147 seconds
     - opam: 167 seconds
 
@@ -18,13 +18,13 @@ This document outlines the scenarios and metrics used to compare the new Dune pa
     - opam: 269 seconds
 
 3. **Time-to-New-Dependency**
-   - **Description:** This test measures the time taken to add a new dependency to an existing project and build it.
-   - **Metric:** Time taken from adding a new dependency to having it built.
+  - **Description:** This test measures the time taken to add a new dependency to an existing project and build it.
+  - **Metric:** Time taken from adding a new dependency to having it built.
     - Dune: ??? seconds
     - opam: ??? seconds
 
 4. **Time-to-Upgrade-Dependencies**
-   - **Description:** This test measures the time taken to remove the lock file, update all dependencies to their latest versions, and build the project.
-   - **Metric:** Time taken from removing the lock file to building the project with the latest versions of all dependencies.
+  - **Description:** This test measures the time taken to remove the lock file, update all dependencies to their latest versions, and build the project.
+  - **Metric:** Time taken from removing the lock file to building the project with the latest versions of all dependencies.
     - Dune: ??? seconds
     - opam: ??? seconds
