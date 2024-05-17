@@ -29,7 +29,7 @@ This document outlines the scenarios and metrics used to compare the new Dune pa
      execute a meaningful command with Dune (dune init, dune build, etc)
    - **Measurements:**:
      - Dune (./0.install-dune.sh): ~1 second
-     - Opam (./install-opam.sh): ~220 seconds 
+     - Opam (./0.install-opam.sh): ~220 seconds 
 
 1. **Time to First Build** for New Projects in a Fresh environement
    - **Description:** The time it takes to prepare the environment for the
